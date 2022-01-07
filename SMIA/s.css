@@ -1,0 +1,281 @@
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+ *{font-family: 'Poppins', sans-serif;
+ margin:0;padding:0; box-sizing: border-box;
+ scroll-behavior : smooth;
+ }
+ /*parti 1------------------------------------------------------------------------------------------------------------*/
+ header{
+	 background-color:#D3DEDC;
+	 width:100%;
+	 position:fixed;
+	 z-index:999;
+	 display: flex;
+	 justify-content:space-between;/*far9 bayna header o nav*/
+	 align-items:center;
+	 padding:10px 200px;
+ }
+ .logo{
+	 text-decoration:none;
+	 color:#0000fd;
+	 text-transform:uppercase;
+	 font-weight:700;
+	 font-size:29px;
+ }
+ 
+ .navigaton a{
+	 color:#0000fd;
+	 text-decoration:none;
+	 font-size:18px;
+	 font-weight:500;
+	 padding-left:30px;
+ }
+ 
+ .navigaton a:hover{
+ color:#7C9473}
+ 
+ section{
+	 padding: 100px 200px;
+ }
+ 
+  /*parti 2------------------------------------------------------------------------------------------------------------*/
+ .main{
+	 width:100%;
+	 min-height: 100vh;
+	 display:flex;
+	 align-items:center;
+	 background:url("set.jpg") no-repeat;
+	 background-size: cover;
+	 background-position:center;
+	 background-attachment:fixed;
+ }
+ 
+ .main h2{
+	 color:#ffffff;
+	 font-size:23px;
+	 font-weight:500;
+ }
+ 
+ .main h2 span{
+	 display:inline-block;
+	 margin-top:10px;
+	 color:#0000df;
+	 font-size:48px;
+	 font-weight:600;
+ }
+ 
+ 
+ 
+ .main h3{
+	 color:#ffffff;
+	 font-size:32px;
+	 font-weight:700;
+	 letter-spacing:1px;
+	 margin-top:10px;
+	 margin-bottom:30px;
+ }
+ 
+ 
+ .main-btn{
+	 color:#ffffff;
+	 background-color:#0000df;
+	 text-decoration:none;
+	 font-size:18px;
+	 font-weight:600;
+	 display:inline-block;
+	 padding:15px 35px;
+	 letter-spacing:1px;
+	 border-radius:15px;
+	 margin-bottom:40px;
+	 transform:0.8s ease;
+ }
+ 
+ .main-btn:hover{
+	    background-color:#0000ff;
+            transform:scale(1.1);
+}
+			
+.social-icons a{
+	     color:#ffffff;
+		 font-size:28px;
+		 padding-right:30px;
+	
+}
+
+ /*parti 3------------------------------------------------------------------------------------------------------------*/
+.title{
+	  display:flex;
+	  justify-content:center;
+	  color:#0000ff;
+	  font-size:36px;
+	  font-weight:800;
+	  margin-bottom:30px;
+}
+
+.content{
+	display:flex;
+	justify-content:center;
+	flex-direction:row;
+	flex-wrap:wrap;
+}
+
+ .card{
+	background-color:#ffffff;
+	width:340px;
+    box-shadow: 1px 5px 25px #D3DEDC;
+	border-radius: 10px;
+	padding: 25px;
+	margin: 15px;
+
+}
+.card:hover{
+	transform: scale(1.1);	
+}
+
+.icon{
+	color:#0000fd;
+	font-size:128px;
+	text-align:center;
+}
+
+.info{
+	text-align:center;
+}
+
+.info h3{
+	color:#00005d;
+	font-size:18px;
+	font-weight:700;
+	margin:10px;
+}
+/*parti 4------------------------------------------------------------------------------------------------------------*/
+    .projects{/* fond de */
+		background-color:#D3DEDC;
+	}
+	
+	.projects .content{/*masafa li b3ida 3a title project*/
+		margin-top:30px;	
+	}
+	
+	.project-card{
+		background-color:#ffffff;
+		border:1px solid #0000fd;
+		min-height:224px;/*a9al haja momkina*/
+		width:368;
+		overflow: hidden;
+		border-radius:10px;
+		margin:20px;
+		transition:0.7s ease;/*wa9t  li thaz fi image*/
+		
+	}
+	
+	.project-card:hover{
+		transform: scale(1.1)/*wa9t click 3ala image kathaz*/
+	}
+	
+	.project-card:hover .project-image{
+		opacity:0.9;/*daou2 abyad*/
+	}
+	
+	.project-image imag{/*image katakhod la taille dialha*/
+	width:100%;}
+	
+	.project-info{
+		padding:16px;
+	}
+	
+	.project-category{
+		font-size:13px;
+		color:#000000;
+	}
+	
+	.project-title{
+		display: flex;
+		justify-content:space-between;/*masafa bayn link o title*/
+		text-transform:uppercase;
+		font-weight:800;
+		margin-top:10px;
+	}
+	
+	.more-details{#D3DEDC
+		text-decoration:none;
+		color:#0000fd;
+	}
+	
+	.more-details:hover{
+		color:#D3DEDC;
+	}
+	
+/*parti 5------------------------------------------------------------------------------------------------------------*/
+.contact .icon{
+	font-size:72px;
+}
+
+.contact .info h3{
+	color:#000000;
+}
+
+/*parti 6--------------------------------------------------------------------------------------------------------------*/
+.footer{
+	background-color:#000055;
+	color:#fff;
+	padding:23px;
+	display:flex;
+	justify-content:space-between;
+}
+
+.footer-title{
+	font-size:21px;
+	font-weight:600;
+}
+
+.footer-title span{
+	color:#7C9473;
+}
+
+.footer .social-icons a{
+	font-size:21px;
+	padding:0 12px 0 0;
+}
+
+@media (max-width:1023px){/*media cwirai max... comme condition*/
+	header{
+	padding:12px 20px;}
+	.navigaton a{
+		padding-left:10px;
+	}
+	.title{
+		font-size:29px;
+	}
+	
+	section{
+		padding:80px 20px;
+	}
+	
+	.main-content h2{
+		font-size:16px;
+	}
+	.main-content h3{
+		font-size:26px;
+	}
+	.content{
+		flex-direction: column;
+		align-items:center;
+	}
+}
+
+@media (max-width:641){
+	body{
+	font-size:12px;}
+	.main-content h2{
+		font-size:0.8em;/*1em=12px ==> dans cette cas */
+	}
+
+	.main-content h3{
+		font-size:1.4em;
+	}
+}	
+	
+@media (max-width:641){
+	body{
+	font-size:10px;}
+}
